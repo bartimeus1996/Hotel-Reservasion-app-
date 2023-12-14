@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/musteri_bg"
+    tools:context=".MusteriBilgisiActivity">
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/purple_200"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        android:text="Müşteri Bilgileri"
+        android:textSize="32dp"
+        />
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:src="@drawable/applogo"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Otelimize hoş geldiniz"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="adı :  "
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tvAd"/>
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="eposta : "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvteleNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefon Numara :  "
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pasaport : "
+                android:textSize="20dp"
+                android:id="@+id/tvPasNum"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkin : "
+                android:textSize="20dp"
+                android:id="@+id/tvcheckin"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout : "
+                android:textSize="20dp"
+                android:id="@+id/tvchekout"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
